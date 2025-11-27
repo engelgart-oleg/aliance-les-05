@@ -37,7 +37,7 @@ body {
 
 /*************** HEADER ***************/
 .header {
-  min-height: 100vh;
+  min-height: 98vh;
   padding-top: 94px;
 }
 .header-image {
@@ -89,7 +89,7 @@ body {
 .header-logo {
   display: flex;
   align-items: center;
-  padding: 50px;
+  padding: 0 31px 0 35px;
   border-right: 1px solid rgba(235, 235, 240, 0.2);
   height: 100%;
 }
@@ -105,8 +105,9 @@ body {
 .header-nav-link {
   font-size: 16px;
   text-decoration: none;
-  margin-right: 50px;
+  margin-right: 51px;
   color: inherit;
+  letter-spacing: 0.1px;
 }
 .header-phone {
   flex-shrink: 0;
@@ -115,7 +116,7 @@ body {
   align-items: center;
   gap: 10px;
 
-  margin-right: 50px;
+  margin-right: 52px;
 }
 .header-phone-link {
   font-size: 16px;
@@ -124,12 +125,18 @@ body {
 }
 .navbar-button {
   height: 100%;
+  /* padding: 25px 45px; */
 
-  flex-shrink: 0;
+  padding: 25px 38px 25px 52px;
+
+  flex-shrink: 0;  
 }
 
 
 /*************** HEADER-CONTENT ***************/
+.header-container {
+  padding-left: 10px;
+}
 .header-content {
   padding-top: 150px;
   position: relative;
@@ -146,10 +153,12 @@ body {
 
   font-family: 'Bebas Neue';
 
-  font-size: 80px;
+  font-size: 79px;
   line-height: 120%;
 
-  margin: 30px 0;
+  margin: 23px 0 40px 0;
+
+  letter-spacing: 0.9px;
 }
 .header-text {
   max-width: 720px;
@@ -159,8 +168,12 @@ body {
   line-height: 160%;
 
   margin-bottom: 50px;
-}
 
+  letter-spacing: 0.1px;
+}
+.header-button {
+  padding: 26px 60px;
+}
 
 /*************** HEADER-FEATURES ***************/
 .header-features {
@@ -169,7 +182,7 @@ body {
   display: flex;
 
   padding: 0;
-  margin-top: 100px;
+  margin-top: 99px;
 
   list-style: none;
   color: #fff;
@@ -177,7 +190,8 @@ body {
   position: relative;
 }
 .header-features-item {
-  padding: 30px 50px;
+  width: 287px;
+  padding: 30px 50px 10px 50px;
   border: 1px solid rgba(235, 235, 240, 0.2);
 }
 .header-features-item:not(:last-child) {
@@ -194,11 +208,16 @@ body {
 .section {
   margin: 150px 0;
 }
+.section-container {
+  padding-left: 9px;
+}
 .section-title {
   font-family: 'Bebas Neue';
   font-size: 60px;
   line-height: 120%;
   color: #292d33;
+  margin-top: 24px;
+  margin-bottom: 53px;
 }
 .steps {
   display: flex;
@@ -230,8 +249,8 @@ body {
   font-size: 28px;
   line-height: 160%;
   color: #292d33;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 32px;
+  margin-bottom: 13px;
 }
 .steps-text {
   font-weight: 400;
@@ -239,7 +258,7 @@ body {
   line-height: 160%;
   color: #828a99;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 .steps-link {
   font-weight: 600;
